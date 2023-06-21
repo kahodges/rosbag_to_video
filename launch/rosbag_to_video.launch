@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- logi1  -->
+    <node name="logi1" pkg="rosbag_to_video" type="rosbag_to_video.py" output="screen">
+        <param name="~output_file" value="~/convert_ws/videos/logi1.mp4"/>
+        <remap from="/logi1/image_raw" to="/logi1/image_raw"/>
+    </node>
+    <!-- logi2  -->
+    <node name="logi2" pkg="rosbag_to_video" type="rosbag_to_video.py" output="screen">
+        <param name="~output_file" value="~/convert_ws/videos/logi2.mp4"/>
+        <remap from="/logi1/image_raw" to="/logi2/image_raw"/>
+    </node>
+    <!-- logi3  -->
+    <node name="logi3" pkg="rosbag_to_video" type="rosbag_to_video.py" output="screen">
+        <param name="~output_file" value="~/convert_ws/videos/logi3.mp4"/>
+        <remap from="/logi1/image_raw" to="/logi3/image_raw"/>
+    </node>
+    <!-- logi4  -->
+    <node name="logi4" pkg="rosbag_to_video" type="rosbag_to_video.py" output="screen">
+        <param name="~output_file" value="~/convert_ws/videos/logi4.mp4"/>
+        <remap from="/logi1/image_raw" to="/logi4/image_raw"/>
+    </node>
+    <!-- logi5  -->
+    <node name="logi5" pkg="rosbag_to_video" type="rosbag_to_video.py" output="screen">
+        <param name="~output_file" value="~/convert_ws/videos/logi5.mp4"/>
+        <remap from="/logi1/image_raw" to="/logi5/image_raw"/>
+    </node>
+    <!-- logi6  -->
+    <node name="logi6" pkg="rosbag_to_video" type="rosbag_to_video.py" output="screen">
+        <param name="~output_file" value="~/convert_ws/videos/logi6.mp4"/>
+        <remap from="/logi1/image_raw" to="/logi6/image_raw"/>
+    </node>
+</launch>
